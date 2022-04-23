@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Dowsing",
+  "description": "Keyboard shortcuts for Google search result.",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.google.com/search?*",
+        "http://*.google.com/",
+        "https://*.google.com/search?*",
+        "https://*.google.com/"
+      ],
+      "js": ["keymaster.min.js", "script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": ["http://*.google.com/", "https://*.google.com/"]
+}
