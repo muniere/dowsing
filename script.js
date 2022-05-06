@@ -1,6 +1,6 @@
 (function () {
   const Selectors = Object.freeze({
-    RESULT: '.g > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)',
+    RESULT: '#search a[data-ved]',
     PREV_PAGE: 'a#pnprev',
     NEXT_PAGE: 'a#pnnext',
   });
