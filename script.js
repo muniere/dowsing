@@ -1,6 +1,6 @@
 (function () {
   const Selectors = Object.freeze({
-    RESULT: '#search a[data-ved]',
+    RESULT: '#search a[data-ved]:not([role="button"])',
     PREV_PAGE: 'a#pnprev',
     NEXT_PAGE: 'a#pnnext',
   });
