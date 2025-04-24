@@ -93,10 +93,12 @@
       if (newCursor != oldCursor) {
         const oldNode = this.#results[oldCursor];
         oldNode.style.backgroundColor = Colors.DEFAULT;
+        oldNode.style.display = undefined;
       }
 
       const newNode = this.#results[newCursor];
       newNode.style.backgroundColor = Colors.FOCUSED;
+      newNode.style.display = 'block';
       newNode.focus();
 
       this.#cursor = newCursor;
